@@ -43,7 +43,7 @@ console.log(helloMessage);
  * console.
  */
 
-
+//done on the first one
 
 
 // Don't modify the following line, it generates a random number between 1 and 3
@@ -128,4 +128,12 @@ alert ("Your tip will be " + "$"+ calculateTip(tipPercent, billTotal));
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
+
+function applyDiscount(originalPrice, discountPercent){
+    var result = (originalPrice) - (originalPrice * discountPercent);
+    return result;
+
+
+}
+console.log(applyDiscount(100, .2));
 
