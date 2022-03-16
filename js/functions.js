@@ -16,7 +16,8 @@ return ("Hello, " + myName)
     //return name;
 }
 console.log(sayHello(myName));
-
+//sayHello("Michael");
+sayHello("Michael");
 
 /**
  * TODO:
@@ -25,8 +26,6 @@ console.log(sayHello(myName));
  *
  * console.log 'helloMessage' to check your work
  */
-
-sayHello("Michael");
 
 var helloMessage = sayHello("Michael");
 console.log(helloMessage);
@@ -43,7 +42,8 @@ console.log(helloMessage);
  * console.
  */
 
-//done on the first one
+sayHello(myName);
+
 
 
 // Don't modify the following line, it generates a random number between 1 and 3
@@ -68,17 +68,21 @@ var random = Math.floor((Math.random() * 3) + 1);
  * number)
  */
 
-function isTwo(random){
-    let result;
-    if (random === 2) {
-        result = 'true';
-    } else {
-        result = 'false';
-    }
-    return result;
+function isTwo(num){
+    return num === 2;
+//     var result;
+//     if (random === 2) {
+//         result = 'true';
+//     } else {
+//         result = 'false';
+//     }
+//     return result;
 }
 //isTwo(1)
-console.log(isTwo(1))
+isTwo(1);
+
+isTwo(random);
+console.log(random);
 
 /**
  * TODO:
@@ -110,7 +114,7 @@ console.log("Amount to tip is ", result);
 
 var billTotal = prompt("What is the bill total?");
 var tipPercent = prompt("What percentage tip would you like to leave?");
-alert ("Your tip will be " + "$"+ calculateTip(tipPercent, billTotal));
+alert ("Your tip will be " + "$"+ calculateTip(Number(tipPercent),Number(billTotal)));
 
 
 
