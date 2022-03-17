@@ -124,36 +124,33 @@ alert(analyzeColor(pickColor));
  * return value.
  */
        //var Pct;
-function calculateTotal(luckyNbr, totalAmt) {
+//function calculateTotal(luckyNbr, totalAmt) {
 
-   // let result = (totalAmt) - (totalAmt * luckyNbr);
-    if (luckyNbr === 0) {
-        luckyNbr = (0);
-        return (totalAmt) - (0);
-          }
-    else if (luckyNbr === 1) {
-        //luckyNbr = .1;
-        return (totalAmt) - (totalAmt * .1);
-    }
-    else if (luckyNbr === 2) {
-        //Pct = .25;
-        return (totalAmt) - (totalAmt * .25);
-    }
-    else if (luckyNbr === 3) {
-        //Pct = .35;
-        return (totalAmt) - (totalAmt * .35);
-    }
-    else if (luckyNbr === 4) {
-        //Pct = .50;
-        return (totalAmt) - (totalAmt *.5);
-    }
-     else{
-         //Pct = 1;
-        return totalAmt;
-        }
+    //   if (luckyNbr === 0) {
+    //      return totalAmt;
+    //       }
+    // else if (luckyNbr === 1) {
+    //     return (totalAmt) - (totalAmt * .1);
+    // }
+    // else if (luckyNbr === 2) {
+    //     //Pct = .25;
+    //     return (totalAmt) - (totalAmt * .25);
+    // }
+    // else if (luckyNbr === 3) {
+    //     //Pct = .35;
+    //     return (totalAmt) - (totalAmt * .35);
+    // }
+    // else if (luckyNbr === 4) {
+    //     //Pct = .50;
+    //     return (totalAmt) - (totalAmt *.5);
+    // }
+    //  else{
+    //      //Pct = 1;
+    //     return 0;
+    //     }
 
-    }
-    console.log(calculateTotal(3, 100));
+    //}
+    //console.log(calculateTotal(5, 100));
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 5.
@@ -162,8 +159,31 @@ function calculateTotal(luckyNbr, totalAmt) {
  * and alerts to display to the user what their lucky number was, what their
  * price before the discount was, and what their price after the discount is.
  */
-// Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
+//Generate a random number between 0 and 6
+var luckyNumber = Math.floor(Math.random() * 6);
+var totalBill = prompt("What was the total amount of your bill?");
+function calculateTotal(a, b) {
+    if (a === 0) {
+        return b;
+    } else if (a === 1) {
+        return (b) - (b * .1);
+    } else if (a === 2) {
+        //Pct = .25;
+        return (b) - (b * .25);
+    } else if (a === 3) {
+        //Pct = .35;
+        return (b) - (b * .35);
+    } else if (luckyNbr === 4) {
+        //Pct = .50;
+        return (b) - (b * .5);
+    } else {
+        //Pct = 1;
+        return 0;
+    }
+}
+alert("Your lucky number is " + luckyNumber);
+alert("Your price before the discount was $" + totalBill);
+alert("Your price after the discount was applied is $" + (calculateTotal(luckyNumber, totalBill)));
 
 /**
  * TODO:
