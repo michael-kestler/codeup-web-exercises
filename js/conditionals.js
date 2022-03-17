@@ -123,7 +123,37 @@ alert(analyzeColor(pickColor));
  * Test your function by passing it various values and checking for the expected
  * return value.
  */
+       //var Pct;
+function calculateTotal(luckyNbr, totalAmt) {
 
+   // let result = (totalAmt) - (totalAmt * luckyNbr);
+    if (luckyNbr === 0) {
+        luckyNbr = (0);
+        return (totalAmt) - (0);
+          }
+    else if (luckyNbr === 1) {
+        //luckyNbr = .1;
+        return (totalAmt) - (totalAmt * .1);
+    }
+    else if (luckyNbr === 2) {
+        //Pct = .25;
+        return (totalAmt) - (totalAmt * .25);
+    }
+    else if (luckyNbr === 3) {
+        //Pct = .35;
+        return (totalAmt) - (totalAmt * .35);
+    }
+    else if (luckyNbr === 4) {
+        //Pct = .50;
+        return (totalAmt) - (totalAmt *.5);
+    }
+     else{
+         //Pct = 1;
+        return totalAmt;
+        }
+
+    }
+    console.log(calculateTotal(3, 100));
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 5.
