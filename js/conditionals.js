@@ -27,18 +27,18 @@
 // 4 - create if else block
 // 5 - create return message after each option
 //
-function analyzeColor(color) {
-    var result;
-    if (color === "blue") {
-        result = ("Blue is the color of the Ocean.");
-    } else if (color === "Red") {
-        result = ("Red is the color of fire trucks.");
-    } else {
-        result = ("I don't know anything about " + color);
-    }
-    return result;
-}
-console.log(analyzeColor("Red"));
+// function analyzeColor(color) {
+//     var result;
+//     if (color === "blue") {
+//         result = ("Blue is the color of the Ocean.");
+//     } else if (color === "Red") {
+//         result = ("Red is the color of fire trucks.");
+//     } else {
+//         result = ("I don't know anything about " + color);
+//     }
+//     return result;
+// }
+// console.log(analyzeColor("Red"));
 
 
 
@@ -70,15 +70,16 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  */
 
 function analyzeColor(color) {
+   var result;
     switch(color) {
         case "red":
-            result = "Red is the color of fire trucks.";
+            result = ("Red is the color of fire trucks.");
             break;
         case "blue":
-            result = "Blue is the color of the ocean.";
+            result = ("Blue is the color of the ocean.");
             break;
         default:
-            result = "I don't know that color";
+            result = ("I don't know that color");
     }
     return result;
 }
