@@ -84,8 +84,7 @@ function analyzeColor(color) {
     return result;
 }
 
-console.log(analyzeColor("cyan"));
-
+console.log(analyzeColor(randomColor));
 
 /**
  * TODO:
@@ -173,7 +172,7 @@ function calculateTotal(a, b) {
     } else if (a === 3) {
         //Pct = .35;
         return (b) - (b * .35);
-    } else if (luckyNbr === 4) {
+    } else if (a === 4) {
         //Pct = .50;
         return (b) - (b * .5);
     } else {
@@ -199,7 +198,53 @@ alert("Your price after the discount was applied is $" + (calculateTotal(luckyNu
  * if the user enters a value that is not of the number data type.
  * Instead, use an alert to inform them of the incorrect input data type.
  *
- *
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
+var typeNumber = confirm("Would you like to enter a number?");
+if (typeNumber === true){
+    var yourNumber = prompt("Please type number here");
+} else alert("Bye Felicia!"); {
+    }
+    if (isNaN(yourNumber)) {
+        alert("You have entered an incorrect data type. Please try again with a number.");
+    }else if (parseInt(yourNumber) %  2 === 0) {
+        alert("The number you entered is even.");
+    } else if (parseInt(yourNumber) % 2 !== 0) {
+        alert("The number you entered is odd.");
+    }else{
+
+    }
+if (isNaN(yourNumber)) {
+    alert("You have entered an incorrect data type. Please try again with a number.");
+} else {
+    alert("Your number plus one hundred = " + (parseInt(yourNumber) + 100));
+}
+if (isNaN(yourNumber)) {
+    alert("You have entered an incorrect data type. Please try again with a number.");
+}else if (yourNumber > 0){
+     alert("Your number is positive.");
+ } else if (yourNumber < 0){
+     alert("Your number is negative.");
+ } else {
+ }
+
+
+//  if (typeNumber === true){
+//    alert
+//     // }
+// //     alert("The number you entered is odd");
+// } else { alert ("incorrect data type");
+// }
+// if(typeNumber > 0){
+//     alert("The number you entered is positive");
+//
+// } else if (typeNumber < 0){
+//     alert("The number you entered is negative");
+// } else if (typeNumber == 0){
+//     alert("The number you entered is 0");
+// }
+
+
+
+
