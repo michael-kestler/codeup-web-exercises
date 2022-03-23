@@ -7,7 +7,7 @@
 //Write the loop
 // Do something that’s going to exclude even numbers
 // Print out all numbers, (at this point shouldn’t have even numbers)
-// Anand skip printing the number give
+// And skip printing the number give
 
 for (var i = 1; i <= 50; i++) {
     var input = (prompt("Please enter an odd number between 1 and 50"));
@@ -15,15 +15,25 @@ for (var i = 1; i <= 50; i++) {
         break;
     }
 }
-for (var i = 1; i <= 50; i++){
-    var input = (prompt("Please enter an odd number between 1 and 50"));
-    if (input % 2 !== 0 && input <=49 && input >=1){
-        continue;
+// //Write the loop
+// for (var i = 1; i <= 50; i++){
+//     var input = (prompt("Please enter an odd number between 1 and 50"));
+//     if (input % 2 === 0 && input <=49 && input >=1){
+//         continue;
+//         } else if (input % 2 !== 0 && input <=49 && input >=1) {
+//         input = input + i; }
+//     }
+//         console.log(input);
+//     //if (i !== input){}
+//     //console.log(i)
+
+//var input = prompt("Please enter an odd number between 1 and 50");
+var input = prompt ("please enter an odd number between 1 and 50");
+for (var i = 1; i <= 50; i++) {
+    if (i % 2 === 0 && i === input){
+    continue;
     }
-
-    //if (i !== input){}
-    //console.log(i)
+    console.log(i);
 }
-
 
 

@@ -43,7 +43,7 @@ function showMultiplicationTable(selectedNumber){
 //var random = Math.floor(Math.random() * (200 - 20) +20;
 
 
-      for (var i = 0; i <=10; i++){
+      for (var i = 1; i <=10; i++){
          var random = Math.floor(Math.random() * (200 - 20)) +20;
          if (random %2 === 0)
          console.log(random + " is even");
