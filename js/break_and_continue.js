@@ -30,10 +30,10 @@ for (var i = 1; i <= 50; i++) {
 //var input = prompt("Please enter an odd number between 1 and 50");
 var input = prompt ("please enter an odd number between 1 and 50");
 for (var i = 1; i <= 50; i++) {
-    if (i % 2 === 0 && i === input){
+    if (i % 2 == 0 && (i !== input)){
     continue;
     }
-    console.log(i);
-}
 
+}
+console.log(i);
 
