@@ -49,5 +49,20 @@ Math.floor(Math.random() * 5) + 1;
 //2. Create loop with another random number between 1 and 5 to go within a loop
 //with the number of cones
 
-var allCones = Math.floor(Math.random() * 50) + 50;
+var amtToSell = Math.floor(Math.random() * 50) + 50;
+do {
+    var amtBought = Math.floor(Math.random() * 5) + 1;
+    console.log(amtToSell)
+    if (amtToSell > 0) {
+        console.log(amtBought + " cones sold")
+    }
+    if (amtToSell < amtBought) {
+        console.log("Cannot sell you " + amtBought + " cones I only have " + amtToSell + " left.")
+        console.log("You can buy " + amtToSell + " instead")
+        if (amtToSell - amtToSell == 0) {
+            console.log("Thanks! We are not out of icecream")
+        }
+    }
+    amtToSell = amtToSell - amtBought;
+} while (amtBought <= amtToSell)
 
