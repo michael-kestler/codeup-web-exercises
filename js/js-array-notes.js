@@ -39,5 +39,34 @@ grocerylist.forEach(function(groceryItem){
 
 })
 
-names.forEach(function(dudeNames){
-    console.log(dudeNames);
+//1. does method affect the og array?
+//2. does the method require any params?
+// .foreach(function ()[])
+//3. what if anything is being returned?
+
+// array of strings
+// adding to array using "push" method
+// example animals.push("") - requires parameter
+
+// control command space bar pulls up all the emojis
+
+// you can find out what is being returned by console logging
+//or you can put it in a variable
+
+//push method adds to the end of an array
+//unshift method adds to the beginning of an array
+//
+// shift method and pop method can be used to remove items from array
+// pop method removes last element from the array
+// returning a change in length
+//shift method removes first element from the array and
+// returns a change in length
+// These methods DO change the original array
+
+//1 changes the length of the original array
+// 2  it doesn't require any args
+//3 returns new length
+
+//lastIndexOf locates element at end of the array
+
+// sort method sorts
