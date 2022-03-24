@@ -25,9 +25,9 @@
      *
      */
 
-    planetsString = planetsArray.join(' ');
-    console.log(planetsString);
+    console.log(planetsArray.join('<br>'));
 
-    //planetsString = planetsArray.join(<ul> </ul>);
+
+    console.log("<ul><li>" + planetsArray.join("</li><li>") + "</li></ul>");
 
 })();
