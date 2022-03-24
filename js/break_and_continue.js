@@ -3,13 +3,26 @@
 //2. Prompt the user for an odd number between 1 and 50. Use a loop and a break statement to
 // continue prompting the user if they enter invalid input.
 
+do {
+    var userInput = prompt("Enter an odd number between 1 and 50.");
+} while (userInput % 2 === 0 || userInput < 1 || userInput > 50 || isNaN(userInput));
 
 for (var i = 1; i <= 50; i++) {
-    var input = (prompt("Please enter an odd number between 1 and 50"));
-    if (input % 2 !== 0 && input <=49 && input >=1) {
+    if (i == userInput) {
         break;
+    }else {
     }
 }
+
+
+
+
+// for (var i = 1; i <= 50; i++) {
+//     var input = (prompt("Please enter an odd number between 1 and 50"));
+//     if (input % 2 !== 0 && input <=49 && input >=1) {
+//         break;
+//     }
+// }
 // //Write the loop
 // for (var i = 1; i <= 50; i++){
 //     var input = (prompt("Please enter an odd number between 1 and 50"));
