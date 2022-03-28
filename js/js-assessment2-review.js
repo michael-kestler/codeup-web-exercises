@@ -82,8 +82,9 @@ function creditCard(x){
 // 6. create a function named `AlphabetSoup` that takes a string and returns
 // a string with its letters in alphabetical order. Return false if string is
 // empty or null
-//
-//
+
+
+
 // 7. create a function named `reverse` that takes in and reverses an array.
 
 
