@@ -1,4 +1,4 @@
-(function() {
+
     "use strict";
 
     /**
@@ -11,17 +11,6 @@
      *  > console.log(person.firstName) // "Rick"
      *  > console.log(person.lastName) // "Sanchez"
      */
-
-    /**
-     * TODO:
-     * Add a sayHello method to the person object that returns a greeting using
-     * the firstName and lastName properties.
-     * console.log the returned message to check your work
-     *
-     * Example
-     * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
-     */
-
     var person = {
         firstName: "Michael",
         lastName: "Kestler",
@@ -34,6 +23,17 @@
     console.log(person.lastName) //"Kestler"
 
     console.log(person.sayHello())
+
+
+    /**
+     * TODO:
+     * Add a sayHello method to the person object that returns a greeting using
+     * the firstName and lastName properties.
+     * console.log the returned message to check your work
+     *
+     * Example
+     * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
+     */
 
 
     /** TODO:
@@ -50,6 +50,13 @@
      * and console.log the relevant messages for each person
      */
 
+        //1 create conditional that calculates 12 percent discount if
+        //shopper spends more than $200
+        //2 display line with name of the person that shows how much they
+        // need to pay, amount before discount, discount, and amount after discount
+        //2 create an array of objects where each object represents one shopper
+        //3 create foreach loop to iterate through the array
+        //4 console log message for each person
 
     var shoppersArray = [
             {name: 'Cameron', amount: 180},
@@ -62,18 +69,41 @@
         shoppers.forEach(shopper => {
             var discount = .12;
             if (shopper.amount > 200) {
-                console.log(shopper.name + " initial amount " + shopper.amount);
+                console.log("initial amount " + shopper.amount);
                 var discountAmt = (shopper.amount * discount);
-                console.log(shopper.name + " discount amount " + shopper.amount * discount);
+                console.log("discount amount " + shopper.amount * discount);
                 var newTotal = (shopper.amount - discountAmt);
-                console.log(shopper.name + " after discount amount " + newTotal);
+                console.log("after discount amount " + newTotal);
 
             } else {
-                console.log(shopper.name + " initial amount " + shopper.amount + " gets no discount");
+                console.log("initial amount " + shopper.amount + " gets no discount");
             }
         });
+
+
+
     }
     calcDiscount(shoppersArray);
+    //console.log(shoppers.name + "amount before discount is" + shoppers.name.amount + )
+    // function calcDiscount(shopperObj){
+    //
+    //     //console.log(shoppers[0].name, shoppers[0].amount);
+    //     //var discount = (shoppers[""].amount - (shoppers[""].amount * .12))
+    //     var discount = .12;
+    //     if (shopperObj.amount > 200){
+    //         console.log("initial amount " + shopperObj.amount);
+    //         var discountAmt =  (shopperObj.amount * discount);
+    //         console.log("discount amount " + shopperObj.amount * discount);
+    //         var newTotal = (shopperObj.amount - discountAmt);
+    //         console.log("after discount amount " +  newTotal);
+    //
+    //         //console.log(shoppers[""].name + shoppers[""].amount + discount);
+    //     } else {
+    //         console.log("initial amount " + shopperObj.amount + "gets no discount";
+    //     }
+    //
+    // }
+    // calcDiscount(shoppers[1]);
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
@@ -87,41 +117,6 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
-//1 create an array of objects
-//2 store it in variable named books
-//3 create properties for title and author
-//4 author should have firstName and lastName properties
-//5 add at least 5 books to the array
-
-     var booksArray = [
-        {title: 'The Sun Also Rises', author: {firstName: 'Ernest', lastName: 'Hemingway'}},
-        {title: 'The Great Gatsby', author: {firstName: 'F. Scott', lastName: 'Fitzgerald'}},
-        {title: 'The Great Shark Hunt', author: {firstName: 'Hunter', lastName: 'Thompson'}},
-        {title: 'The Outsider', author: {firstName: 'Colin', lastName: 'Wilson'}},
-        {title: 'On The Road', author: {firstName: 'Jack', lastName: 'Kerouac'}}
-         ];
-        console.log(booksArray[0].title);
-        console.log(booksArray[0].author.firstName);
-        console.log(booksArray[0].author.lastName);
-
-    //create function that lists each book by index number title and author
-    //access books from the books obj
-    //loop through books array
-    //inside of loop access index number, title, author first and last name
-    function listBooks(books){
-        books.forEach(book => {
-            //console.log("Title: " + books[0].title + " Author: " + books[0].author.firstName + " " + books[0].author.lastName);
-            console.log("Book # " + booksArray.indexOf(book));
-            console.log("Title: " + book.title);
-            console.log("Author: " + book.author.firstName + " " + book.author.lastName)
-        });
-    }
-
-
-        listBooks(booksArray);
-    //books.forEach(element => console.log(element));
-
-
 
     /**
      * TODO:
@@ -148,7 +143,6 @@
      *      ...
      */
 
-
     /**
      * Bonus:
      * - Create a function named `createBook` that accepts a title and author
@@ -160,4 +154,4 @@
      *   `showBookInfo` function.
      */
 
-})();
+
