@@ -7,7 +7,10 @@ function filterOut(input){
 
     if(typeof (input) === 'number'){
 
+        var result = input.filter(input => input === "number");
+        return result;
     }
 
 
 }
+filterOut ([3,g,s,5,j,8,2,d,6,h,9,l,5,s,2,3] )
