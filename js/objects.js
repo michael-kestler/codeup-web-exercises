@@ -160,4 +160,22 @@
      *   `showBookInfo` function.
      */
 
+    //create a function named createBook
+    //make parameters book and title name
+    //return book object with title and author name
+
+    function createBook(title, author){
+        var bookObj = [
+            {
+                title: (title), book: (author)
+            }
+        ];
+    }
+    console.log(bookObj);
+
+createBook("Travels with Charley", "Steinbeck")
+
+
+
+
 })();
