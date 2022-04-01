@@ -1,23 +1,25 @@
-.fancy-header {
-    color: purple;
-    }
+/*.fancy-header {*/
+/*    color: yellow;*/
+/*    }*/
 
 h1 {
     text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6{
-    color: maroon;
+    /*color: whitesmoke;*/
     text-decoration: underline;
 }
 
 body{
-    background-color: aquamarine;
-    background-image: url("../img/background.jpeg");
+    background-color: beige;
+    /*background-image: url("../img/bluebackground.jpg");*/
     background-repeat: no-repeat;
-    background-size: 500px 100px;
-    background-position: top center;
-    font-style: oblique;}
+    /*background-size: 500px 100px;*/
+    /*background-position: top center;*/
+    font-style: oblique;
+    color: black;}
+
 
     /*a:link {color:maroon;}*/
     /*a:visited {color:green;}*/
@@ -25,7 +27,9 @@ body{
     /*a:active {color:yellow;}*/
 
 ul{
-    list-style-type: square;
+    list-style-type: none;
+    /*color: whitesmoke;*/
+
 
 }
 
@@ -40,9 +44,12 @@ th, td {
 
 ol{
     list-style-type: lower-roman;
+    /*color: whitesmoke;*/
 }
 
-
+th, td, tr{
+    /*color: whitesmoke;*/
+}
 
 
 
