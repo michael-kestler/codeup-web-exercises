@@ -1,0 +1,46 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Ubuntu, sans-serif;
+}
+
+#info{
+    background-color: lightblue;
+    color: midnightblue;
+    padding: 8px;
+    margin-top: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 10px;
+    border-radius: 5px
+}
+
+#success{
+    background-color: lightgreen;
+    color: darkgreen;
+    padding: 8px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+#warning{
+    background-color: lightyellow;
+    color: darkkhaki;
+    padding: 8px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 10px;
+    border-radius: 5px
+}
+#error{
+    background-color: pink;
+    color: darkred;
+    padding: 8px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}

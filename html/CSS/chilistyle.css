@@ -1,9 +1,16 @@
 
 
-.dark-mode{
-    background-color: green;
-   }
+/*.dark-mode{*/
+/*    background-color: green;*/
+/*   }*/
 
-#big-font{
-    color: white;
+/*#big-font{*/
+/*    color: white;*/
+/*}*/
+
+header{
+    background-image: url("../img/chilipeppers.jpg");
+    background-repeat: no-repeat;
+    background-size: 1500px 1500px;
+    height: 200px
 }
