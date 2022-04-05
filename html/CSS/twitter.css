@@ -71,7 +71,7 @@ a {
 
 }
 .timeline{
-    width: 50%;
+    width: calc(50% - 50px);
     float: left;
     margin-right: .5em;
     margin-left: .5em;
@@ -115,10 +115,12 @@ a {
 .media{
     width: 100%;
     background-color: ghostwhite;
-    border-bottom: 1px;
-    border-bottom-color: black;
     padding: .5em;
     overflow: hidden;
+    border-bottom: solid 1px;
+
+
+
 }
 
 .media-image{
