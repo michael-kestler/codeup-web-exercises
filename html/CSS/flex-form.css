@@ -30,6 +30,7 @@ body {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+
     /* TODO: add a flex container to this selector */
 }
 
@@ -44,6 +45,10 @@ body {
     display: flex;
     flex-direction: row;
     align-content: center;
+    justify-content: space-evenly;
+
+
+
         /* TODO: Add an automatic margin and a flex container to this selector */
 }
 
@@ -61,6 +66,8 @@ body {
     border-radius: 0;
     outline: 0;
     -webkit-appearance: none;
+    display: flex;
+
 }
 
 .btn-primary {
@@ -68,9 +75,14 @@ body {
     border-top: 1px solid #b4d455;
     border-bottom: 1px solid #b4d455;
     color: white;
+    display: flex;
+
 }
 
 .destination {
+   display: flex;
+    flex-basis: 15em;
+
     /* TODO:
         Add an explicit size for items along the main axis of 15em.
         Read more about Flex Basis: https://java.codeup.com/appendix/further-reading/html-css/flexbox-additional-concepts/#flex-basis */
