@@ -1,0 +1,11 @@
+body{
+    /*background-color: orange;*/
+}
+nav{
+    color: red;
+    display: flex;
+
+}
+.form-inline{
+    align-self: flex-start;
+}
