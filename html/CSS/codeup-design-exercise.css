@@ -1,0 +1,221 @@
+/*.circle{*/
+/*    width: 200px;*/
+/*    height: 200px;*/
+/*    !*-webkit-border-radius: 100px;*!*/
+/*    !*-moz-border-radius: 100px;*!*/
+/*    border-radius: 50%;*/
+/*    !*justify-content: center;*!*/
+/*    !*align-content: center;*!*/
+/*    border: solid white 10px;*/
+/*}*/
+/*.circleRed{*/
+/*    background-color: #e6563b;*/
+/*}*/
+/*.circleOrange{*/
+/*    background-color: #eb9d3a;*/
+/*}*/
+/*.circleGreen{*/
+/*    background-color: #7cb06c;*/
+/*}*/
+/*.circleTeal{*/
+/*    background-color: #00aba9;*/
+/*}*/
+/*!*.dot {*!*/
+/*!*    height: 200px;*!*/
+/*!*    width: 200px;*!*/
+/*!*    background-color: #bbb;*!*/
+/*!*    border-radius: 50%;*!*/
+/*!*    display: inline-block;*!*/
+/*!*}*!*/
+/*hr {*/
+/*    color: black;*/
+/*}*/
+/*.circlePlace{*/
+/*    display: flex;*/
+/*<<<<<<< HEAD*/
+/*    justify-content: center;*/
+/*    flex-wrap: wrap;*/
+/*    !*flex-wrap: nowrap;*!*/
+/*    !*justify-content: space-evenly;*!*/
+/*}*/
+/*@media screen and (min-width: 576px) {*/
+/*    .container {*/
+/*        max-width:540px;*/
+/*    }*/
+/*    .circle{*/
+/*        width: 200px;*/
+/*        height: 200px;*/
+/*        -webkit-border-radius: 100px;*/
+/*        -moz-border-radius: 100px;*/
+/*        border-radius: 100px;*/
+/*        border: solid white 10px;*/
+/*        !*display: flex;*!*/
+/*        !*justify-content: center;*!*/
+/*        !*align-items: center;*!*/
+/*    }*/
+/*    .circleRed {*/
+/*        background-color: #E6563B;*/
+/*    }*/
+/*    .circleOrange {*/
+/*        background-color: #EB9D3A;*/
+/*    }*/
+/*    .circleGreen {*/
+/*        background-color: #7CB06C;*/
+/*    }*/
+/*    .circleBlue {*/
+/*        background-color: #00ABA9;*/
+/*    }*/
+/*    .circlePlace{*/
+/*        flex-direction: row;*/
+/*        !*flex-wrap: nowrap;*!*/
+/*        !*justify-content: space-evenly;*!*/
+/*        display: grid;*/
+/*        gap: 1rem;*/
+/*        grid-auto-flow: column;*/
+/*    }*/
+
+/*=======*/
+/*    !*justify-content: center;*!*/
+/*    !*align-content: normal;*!*/
+/*    flex-direction: row;*/
+/*    !*flex-wrap: wrap;*!*/
+/*    !*justify-content: space-evenly;*!*/
+/*>>>>>>> 2d5d4df7561f2470abd3e1ab843e56fc6b570e4a*/
+/*}*/
+
+
+body{
+    font-family: 'Anton', sans-serif;
+    background-color: #f0f0f0;
+
+}
+h1{
+    font-size: 64px;
+}
+h2{
+    font-size: 40px;
+}
+.circle h3{
+    color: white;
+}
+/*p{*/
+/*    font-size: 28px;*/
+/*}*/
+/*h5{*/
+/*    padding-top: 10px;*/
+/*}*/
+
+.circle{
+    width: 150px;
+    height: 150px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    border: solid white 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circleRed {
+    background-color: #E6563B;
+}
+.circleOrange {
+    background-color: #EB9D3A;
+}
+.circleGreen {
+    background-color: #7CB06C;
+}
+.circleBlue {
+    background-color: #00ABA9;
+}
+
+.circlePlace{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /*flex-wrap: nowrap;*/
+    /*justify-content: space-evenly;*/
+}
+.mini-circle{
+    width: 35px;
+    height: 35px;
+    border-radius: 18px;
+    color: black;
+    font-size: 10px;
+}
+.card-footer{
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 1em;
+}
+.parent-card{
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-self: center;*/
+    /*flex-direction: column;*/
+}
+#apple, #man, #security, #macbook {
+
+    border: solid lightgray 10px;
+    border-radius: 5px;
+    width: 350px;
+
+}
+.para{
+    font-family: 'Abel', sans-serif;
+
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width:540px;
+    }
+    .circle{
+        width: 200px;
+        height: 200px;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        border-radius: 100px;
+        border: solid white 10px;
+        /*display: flex;*/
+        /*justify-content: center;*/
+        /*align-items: center;*/
+    }
+    .circleRed {
+        background-color: #E6563B;
+    }
+    .circleOrange {
+        background-color: #EB9D3A;
+    }
+    .circleGreen {
+        background-color: #7CB06C;
+    }
+    .circleBlue {
+        background-color: #00ABA9;
+    }
+    .circlePlace{
+        flex-direction: row;
+        /*flex-wrap: nowrap;*/
+        /*justify-content: space-evenly;*/
+        display: grid;
+        gap: 1rem;
+        grid-auto-flow: column;
+    }
+
+    /*.feature{*/
+    /*display: flex;*/
+    /*align-content: center;*/
+    /*justify-content: center;*/
+
+    /*}*/
+    @media screen and (min-width: 550px) {
+        .img{
+            max-width: 100%;
+            width: 400px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+
+        }
+    }
+}
