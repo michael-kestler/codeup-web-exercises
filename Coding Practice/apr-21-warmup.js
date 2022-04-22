@@ -1,7 +1,7 @@
 // Write a function that takes an array of objects and a string as arguments
 // Add a property with key 'continent' and value equal to the string to each of the objects
 // Return the new array of objects
-// Tipp: try not to mutate the original array
+// Tip: try not to mutate the original array
 
 /*example input: [{ city: 'Tokyo', country: 'Japan' }, { city: 'Bangkok', country: 'Thailand' }], 'Asia'
 expected output: [{ city: 'Tokyo', country: 'Japan', continent: 'Asia' }, { city: 'Bangkok', country: 'Thailand', continent: 'Asia' }]*/
@@ -20,9 +20,16 @@ expected output: [{ city: 'Tokyo', country: 'Japan', continent: 'Asia' }, { city
 
 //countryArray.continent = contString
 
-function addContinent(countryArray, contString){
-    countryArray.continent = contString
+// function addContinent(countryArray, contString){
+//     for(let i = countryArray;
+// }
+//
+// addContinent([{ city: 'Tokyo', country: 'Japan' }
 
-}
+shapes.forEach(function(shape) {
+    console.log('Here is a lovely shape: ' + shape + '.');
+});
 
-addContinent([{ city: 'Tokyo', country: 'Japan' }], 'Asia');
+
+//
+
