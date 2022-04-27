@@ -6,3 +6,6 @@ $('#codeup').hover(
         $(this).css('background-color', '#FFF');
     }
 );
+$('p').dblclick(function(e) {
+    $(this).css('font-size', '18px')
+});
