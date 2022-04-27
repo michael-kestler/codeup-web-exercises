@@ -115,3 +115,34 @@ expected output: {a:'2',b:'4',c:'6',d:'8'}
     Add properties and values to the existing object
 Re-assign 2 properties’ values */
 
+//27 APR 2022 Warmup
+// Write a function that takes two date instances as argument
+// It should return the number of days that lies between those dates
+//example input: new Date('2020-06-11'), new Date('2020-06-01')
+// expected output: 10example input: new Date('2020-06-11'), new Date('2020-06-01')
+// expected output: 10
+
+
+// function daysBetween(x, y){
+//
+//
+// }
+
+
+//// Write a function that takes an array (a) and a number (b) as arguments
+// // Sum up all array elements with a value greater than b
+// // Return the sum
+//
+// example input: [1, 2, 3, 4, 5, 6, 7], 2
+// expected output: 25
+
+// function sumElements(arr, num){
+//     for (let i = 0; i >= 0; i++){
+//         console.log arr(i)
+//     }
+
+
+// }
+
+
+
