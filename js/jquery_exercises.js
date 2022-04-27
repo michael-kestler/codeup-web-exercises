@@ -9,3 +9,13 @@ $('#codeup').hover(
 $('p').dblclick(function(e) {
     $(this).css('font-size', '18px')
 });
+
+$('li').hover(
+    function() {
+        $(this).css('color', '#FF0000');
+    },
+    function() {
+        $(this).css('color', '#000000');
+    }
+
+);
