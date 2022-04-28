@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Konami Code</title>
+</head>
+<body>
+<h1>Konami Code</h1>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!--<script src="/js/jquery.js"></script>-->
+<script>
+    "use strict";
+let keys = {
+  13: "enter",
+  37: "left",
+  38: "up",
+  39: "right",
+  40: "down",
+  65: "a",
+  66: "b"
+};
+    let konamiKode = ["up", "up", "down", "down", "left", "right", "left", "right", "a", "b", "enter"]
+
+
+
+    // var keySequence = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65, 13
+    $(document).keyup(function(event){
+        console.log(event.keyCode);
+    });
+</script>
+</body>
+</html>
+</body>
+</html>
