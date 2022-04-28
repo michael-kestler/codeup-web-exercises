@@ -145,4 +145,23 @@ Re-assign 2 properties’ values */
 // }
 
 
+// 28 APR 2022 Warmup
+
+// Write a function that takes an array (a) and a value (n) as arguments
+// Save every nth element in a new array
+// Return the new array
+
+// example input: [1,2,3,4,5,6,7,8,9,10],3
+// expected output: [3,6,9]
+
+let arr = [1,2,3,4,5,6,7,8,9,10];
+console.log(arr.slice (1, 4, 7));
+
+// function newArr(arrInput, numInput){
+//     for (let i = 0; i >= 0; i++){
+//
+//     }
+//
+// }
+
 
