@@ -58,11 +58,21 @@
         Some national parks welcome pets—in developed areas, on many trails and campgrounds, and in some lodging facilities. Learn more about pets in parks.
     </dd>
 </dl>
+<a href="#" id="show-answers">Click to show or hide answers.</a>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
 <script>
 
-$('dd').addClass('.invisible');
+
+$(document).ready(function(){
+    $('#show-answers').click(function(event){
+        event.preventDefault();
+        $('dd').toggleClass('invisible');
+    });
+});
+// $('dd').addClass('invisible')
+
 
 </script>
 </body>
