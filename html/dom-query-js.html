@@ -88,7 +88,7 @@
                 everyOtherLi[i].style.color = 'gray';
             }
         }
-        document.getElementById('btn2').addEventListener('click', listener1)
+        document.getElementById('btn2').addEventListener('click', listener1);
         // var everyOtherLi = document.getElementsByTagName('li');
         //
         // for (var i = 0; i < everyOtherLi.length; i+=2) {
@@ -97,9 +97,16 @@
 
 
         // TODO: Set text color of li with dbid = 1 to blue
-        var dbidElement = document.getElementsByTagName('li')[0];
+        var listener2 = function (event){
+            var dbidElement = document.getElementsByTagName('li')[0];
 
-        dbidElement.style.color = 'blue'
+            dbidElement.style.color = 'blue'
+        }
+
+        document.getElementById('btn3').addEventListener('click', listener2);
+        // var dbidElement = document.getElementsByTagName('li')[0];
+        //
+        // dbidElement.style.color = 'blue'
 
 
 
