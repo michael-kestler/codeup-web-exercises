@@ -80,11 +80,20 @@
 
 
         // TODO: Set text color on every other list item to grey
-        var everyOtherLi = document.getElementsByTagName('li');
 
-        for (var i = 0; i < everyOtherLi.length; i+=2) {
-            everyOtherLi[i].style.color = 'gray';
+        var listener1 = function (event){
+            var everyOtherLi = document.getElementsByTagName('li');
+
+            for (var i = 0; i < everyOtherLi.length; i+=2) {
+                everyOtherLi[i].style.color = 'gray';
+            }
         }
+        document.getElementById('btn2').addEventListener('click', listener1)
+        // var everyOtherLi = document.getElementsByTagName('li');
+        //
+        // for (var i = 0; i < everyOtherLi.length; i+=2) {
+        //     everyOtherLi[i].style.color = 'gray';
+        // }
 
 
         // TODO: Set text color of li with dbid = 1 to blue
