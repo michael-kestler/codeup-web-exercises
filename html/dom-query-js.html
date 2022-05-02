@@ -103,6 +103,7 @@
             dbidElement.style.color = 'blue'
         }
 
+
         document.getElementById('btn3').addEventListener('click', listener2);
         // var dbidElement = document.getElementsByTagName('li')[0];
         //
@@ -117,8 +118,13 @@
 
 
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
-        subParagraphs[0].innerText = 'Mission Accomplished!';
-        console.log(subParagraphs);
+        var listener3 = function (event){
+            subParagraphs[0].innerText = 'Mission Accomplished!';
+        }
+
+        document.getElementById('btn4').addEventListener('click', listener3);
+        // subParagraphs[0].innerText = 'Mission Accomplished!';
+        // console.log(subParagraphs);
 
 
 
