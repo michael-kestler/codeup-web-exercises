@@ -86,7 +86,7 @@
         <li>The park received 168,028 visitors in 2017, and operated with a budget of $2.8 million. </li>
     </ul>
 
-<button type="button">Click to hightlight last list item</button>
+<button type="button" id="li-button">Click to hightlight last list item</button>
 
 </div>
 
@@ -110,6 +110,17 @@ $(document).ready(function(){
     });
 });
 // $('dd').addClass('invisible')
+
+$(document).ready(function(){
+    $('#li-button').click(function(event){
+        event.preventDefault();
+        $('ul').each(function(index) {
+             $(this).children().last().css('background-color', '#FF0');
+            });
+        });
+        // $('ul').children().last().css('background-color', '#FFFF00');
+
+});
 
 
 </script>
