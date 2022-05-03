@@ -18,6 +18,7 @@
     </thead>
     <tbody id="insertProducts"></tbody>
 </table>
+<button type="button" id="refreshProducts">Click to refresh product list</button>
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
@@ -31,21 +32,37 @@
        //       HINT: Your data should come back as a JSON object; use console.log() to inspect
     //             its contents and fields
     //       HINT: You will want to target #insertProducts for your new HTML elements
-    $.get('data/inventory.json').done(function(data) {
-        console.log(data);
-        var itemData = '';
-        $.each(data, function (key, value) {
-            itemData += '<tr>';
-            itemData += '<td>' + value.title + '</td>';
-            itemData += '<td>' + value.quantity + '</td>';
-            itemData += '<td>' + value.price + '</td>';
-            itemData += '<td>' + value.categories + '</td>';
-            itemData += '</tr>';
+
+    $(document).ready(function() {
+        function RefreshTable() {
+            $( "#insertProducts" ).reload ("ajax-store.html #insertProducts");
+        }
+
+        $("#refreshProducts").on("click", RefreshTable);
+
+        // $('#refreshProducts').click(function (event) {
+            // location.reload();
+            // $( "#insertProducts" ).reload( "ajax-store.html #insertProducts");
+            //     event.preventDefault();
+
+
+
+            $.get('data/inventory.json').done(function (data) {
+                // console.log(data);
+                var itemData = '';
+                $.each(data, function (key, value) {
+                    itemData += '<tr>';
+                    itemData += '<td>' + value.title + '</td>';
+                    itemData += '<td>' + value.quantity + '</td>';
+                    itemData += '<td>' + value.price + '</td>';
+                    itemData += '<td>' + value.categories + '</td>';
+                    itemData += '</tr>';
+                });
+                $('#insertProducts').append(itemData);
+
+            });
         });
-        $('#insertProducts').append(itemData);
-
-    });
-
+    // });
 })();
 </script>
 
