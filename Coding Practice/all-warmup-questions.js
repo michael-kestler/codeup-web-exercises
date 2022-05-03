@@ -171,4 +171,30 @@ Re-assign 2 properties’ values */
 // example input:'abcdefg'
 // expected result: 'defg'
 
+//03 MAY 2022 Warmup
+
+// Write a function that takes an object (a) as argument
+// Return an array with all object keys
+
+// example input: {a:1,b:2,c:3}
+// expected output: ['a','b','c']
+
+
+const keys = (obj) => {
+    var obj1 = {
+        a: 1,
+        b: 2,
+        c: 3
+    };
+    var newArray = [];
+
+    for (var key in obj1) {
+        newArray.push(key);
+    }
+
+    return newArray;
+};
+
+keys();
+
 
