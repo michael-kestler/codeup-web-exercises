@@ -27,6 +27,16 @@
         map.setCenter(result);
         map.setZoom(9);
     });
+    var marker = new mapboxgl.Marker()
+        .setLngLat([-86.15980, 39.7648475])
+        .addTo(map);
+
+    var stElmoPopup = new mapboxgl.Popup()
+        .setHTML("<p>St. Elmo Steak House</p>")
+
+    marker.setPopup(stElmoPopup);
+
+
 
 
 </script>
