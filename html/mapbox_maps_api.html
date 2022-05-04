@@ -5,9 +5,10 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Mapbox</title>
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css' rel='stylesheet' />
+    <script src="../js/mapbox-geocoder-utils.js"></script>
 
 </head>
 <body>
@@ -18,9 +19,16 @@
     const map = new mapboxgl.Map({
         container: 'map', // container ID
         style: 'mapbox://styles/mapbox/streets-v11', // style URL
-        center: [-74.5, 40], // starting position [lng, lat]
+        center: [-86.1583, 39.76833], // starting position [lng, lat]
         zoom: 9 // starting zoom
     });
+    geocode("Indianapolis, Indiana", 'pk.eyJ1Ijoid2F5d2FyZHRyZWtzIiwiYSI6ImNsMnFsYXo4ejBhMW8zZ3F2N2xzNndsMmEifQ.qT4MWiKBHvVEri7lFtbN-A').then(function(result) {
+        console.log(result);
+        map.setCenter(result);
+        map.setZoom(9);
+    });
+
+
 </script>
 
 
