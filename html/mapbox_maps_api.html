@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mapbox</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css' rel='stylesheet' />
     <script src="../js/mapbox-geocoder-utils.js"></script>
@@ -15,26 +16,61 @@
 
 <div id='map' style='width: 400px; height: 300px;'></div>
 <script>
-    mapboxgl.accessToken = 'pk.eyJ1Ijoid2F5d2FyZHRyZWtzIiwiYSI6ImNsMnFsYXo4ejBhMW8zZ3F2N2xzNndsMmEifQ.qT4MWiKBHvVEri7lFtbN-A';
+
+    var accessToken = 'pk.eyJ1Ijoid2F5d2FyZHRyZWtzIiwiYSI6ImNsMnFsYXo4ejBhMW8zZ3F2N2xzNndsMmEifQ.qT4MWiKBHvVEri7lFtbN-A'
+    mapboxgl.accessToken = accessToken;
     const map = new mapboxgl.Map({
         container: 'map', // container ID
         style: 'mapbox://styles/mapbox/streets-v11', // style URL
-        center: [-86.1583, 39.76833], // starting position [lng, lat]
+        center: [-86.1934114, 39.741091], // starting position [lng, lat]
         zoom: 9 // starting zoom
     });
-    geocode("Indianapolis, Indiana", 'pk.eyJ1Ijoid2F5d2FyZHRyZWtzIiwiYSI6ImNsMnFsYXo4ejBhMW8zZ3F2N2xzNndsMmEifQ.qT4MWiKBHvVEri7lFtbN-A').then(function(result) {
-        console.log(result);
-        map.setCenter(result);
-        map.setZoom(9);
+    // geocode("Indianapolis, Indiana", 'pk.eyJ1Ijoid2F5d2FyZHRyZWtzIiwiYSI6ImNsMnFsYXo4ejBhMW8zZ3F2N2xzNndsMmEifQ.qT4MWiKBHvVEri7lFtbN-A').then(function(result) {
+    //     console.log(result);
+    //     map.setCenter(result);
+    //     map.setZoom(9);
+    // });
+    // var marker = new mapboxgl.Marker()
+    //     .setLngLat([-86.15980, 39.7648475])
+    //     .addTo(map);
+    //
+    // var stElmoPopup = new mapboxgl.Popup()
+    //     .setHTML("<p>St. Elmo Steak House</p>")
+    //
+    // marker.setPopup(stElmoPopup);
+    var restaurantInfo = [
+        {
+            address: "127 S Illinois St, Indianapolis, IN 46225",
+            popupHTML: "<p>St. Elmo Steakhouse</p>"
+        },
+        {
+            address: "5339 English Ave, Indianapolis, IN 46219",
+            popupHTML: "<p>Aunt Polly's Pizza</p>"
+        },
+        {
+            address: "3149 Thompson Rd, Indianapolis, IN 46227",
+            popupHTML: "<p>Gallagher's Pub & Eatery</p>"
+        }
+        ];
+
+
+    restaurantInfo.forEach(function(restaurant) {
+        function placeMarkerAndPopup(info, token, map) {
+            geocode(info.address, token).then(function (coordinates) {
+                var popup = new mapboxgl.Popup()
+                    .setHTML(info.popupHTML);
+                var marker = new mapboxgl.Marker()
+                    .setLngLat(coordinates)
+                    .addTo(map)
+                    .setPopup(popup);
+                popup.addTo(map);
+            });
+        }
+
+        placeMarkerAndPopup(restaurant, accessToken, map);
+
     });
-    var marker = new mapboxgl.Marker()
-        .setLngLat([-86.15980, 39.7648475])
-        .addTo(map);
 
-    var stElmoPopup = new mapboxgl.Popup()
-        .setHTML("<p>St. Elmo Steak House</p>")
-
-    marker.setPopup(stElmoPopup);
 
 
 
