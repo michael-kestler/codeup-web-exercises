@@ -36,3 +36,14 @@ const users = [
     }
 ];
 
+const threeLanguages = users.filter(user => user.languages.length >= 3)
+//
+//
+console.log(threeLanguages);
+
+// const threeLanguages = users.languages.filter(function(n) {
+//     return n.index >= 3;
+// });
+// console.log(threeLanguages);
+
+console.log(users);
