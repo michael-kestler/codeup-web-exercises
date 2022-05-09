@@ -46,4 +46,10 @@ console.log(threeLanguages);
 // });
 // console.log(threeLanguages);
 
-console.log(users);
+// console.log(users);
+
+
+const userEmail = users.map(function(n) {
+    return n.email;
+});
+console.log(userEmail);
