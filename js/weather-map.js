@@ -1,6 +1,9 @@
 var name = document.querySelector('.name');
 var desc = document.querySelector('.desc');
 var temp = document.querySelector('.temp');
+var humidity = document.querySelector('.humidity');
+var wind = document.querySelector('.wind');
+var pressure = document.querySelector('.pressure');
 
 
 const OPEN_WEATHER_APPID = '3567515707a7e75d45fb9334c9856c89'
@@ -14,10 +17,16 @@ $.get("http://api.openweathermap.org/data/2.5/weather", {
     var nameValue = data['name'];
     var tempValue = data['main']['temp'].toFixed(0);
     var descValue = data['weather'][0]['description'];
+    var humidityValue = data['main']['humidity'];
+    var windValue = data['wind']['speed'].toFixed(1);
+    var pressureValue = data['main']['pressure'];
 
     name.innerHTML = nameValue;
-    desc.innerHTML = descValue;
-    temp.innerHTML = tempValue
+    desc.innerHTML = ("Description: " + descValue);
+    temp.innerHTML = ("Current temperature: " + tempValue + "°F");
+    humidity.innerHTML = ("Humidity: " + humidityValue + "%");
+    wind.innerHTML = ("Wind: " + windValue +"mph")
+    pressure.innerHTML = ("Pressure: " + pressureValue +"Pa");
 
 
 });
