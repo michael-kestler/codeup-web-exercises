@@ -72,6 +72,20 @@ console.log(longestEmail)
 
 
 
+const result = users.reduce(function(user, val, index) {
+    const comma = user.length ? ", " : "";
+    return user + comma + val.name;
+}, '');
+console.log(result);
+
+
+
+
+
+
+
+
+
 // const longestEmail = (users) => users.reduce((user, elength) => (elength.length > user.email.length ? elength : user),
 //    '',
 // );
