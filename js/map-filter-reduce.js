@@ -53,3 +53,34 @@ const userEmail = users.map(function(n) {
     return n.email;
 });
 console.log(userEmail);
+
+
+const totalExperience = users.reduce((total, user) => {
+    return total + user.yearsOfExperience;
+}, 0);
+
+console.log(totalExperience);
+
+
+
+
+//
+
+// function addNumbers(a,b){
+//     return a+b;
+// }
+//
+// addNumbers(8,10);
+//
+// function multiplyResults(num1, num2){
+//     return num1 * num2
+// }
+//
+// multiplyResults(addNumbers(8, 10))
+//
+//
+// function multiplyResults(){}
+//
+// //filter loops through array and takes a conditional and returns filtered compy of the array
+//
+// //what's the difference between map and foreach - interview question
