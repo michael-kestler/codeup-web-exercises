@@ -64,6 +64,20 @@ console.log(totalExperience);
 
 
 
+
+const longestEmail = users.reduce((a, b) => {
+    return a.email.length > b.email.length ? a : b; });
+
+console.log(longestEmail)
+
+
+
+// const longestEmail = (users) => users.reduce((user, elength) => (elength.length > user.email.length ? elength : user),
+//    '',
+// );
+//
+// console.log(longestEmail(users.email))
+
 //
 
 // function addNumbers(a,b){
