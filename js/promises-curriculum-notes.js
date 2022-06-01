@@ -19,3 +19,15 @@ Promise.all([githubPromise, bitbucketPromise])
     .catch(function(error) {
         // handle errors
     });
+
+
+Promise.resolve('one').then((one) => {
+    console.log(one);
+    return 'two';
+}).then((two) => {
+    console.log(two);
+    return 'three';
+}).then((three) => {
+    console.log(three);
+});
+
