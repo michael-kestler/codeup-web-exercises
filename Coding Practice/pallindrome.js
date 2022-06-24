@@ -21,3 +21,36 @@ function palindrome(str)
 }
 
 console.log(palindrome("rotator"));
+
+//function to reverse the string
+function reverse (str)
+{
+    //variable holds reverse string
+    let rev_str = "";
+    for( let i = str.length-1; i >=0; i--)
+    {
+        rev_str+= str[i];
+}
+   //returns reverse string
+    return rev_str;
+}
+
+//function checking if string is palindrom or not
+function is_palindrome(str)
+{
+    let reverse_str = reverse(str);
+    //condition checking if reverse str is
+    //same as string argument in is_palindrome function
+    //else not a palindrome
+
+    if (reverse_str === str)
+    {
+        console.log("passed string is palindrome")
+    }
+    else
+    {
+        console.log("passed string is not palindrome")
+    }
+    }
+    let test = "hellolleh";
+is_palindrome(test);
