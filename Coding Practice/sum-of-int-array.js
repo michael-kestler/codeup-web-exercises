@@ -8,3 +8,10 @@ for ( var i = 0; i < numbers.length; i++){
 }
 
 console.log(sum);
+
+
+const numArr = [10, 20, 30, 40];
+add = (a, b) => a + b;
+const total = numArr.reduce(add)
+
+console.log(total);
