@@ -54,3 +54,13 @@ function is_palindrome(str)
     }
     let test = "hellolleh";
 is_palindrome(test);
+
+
+//javascript code to check string palindrome
+
+let checkPalindrome = (str) => {
+    return str === str.split("").reverse().join("");
+    };
+
+console.log("Is Palindrome? : " + checkPalindrome("noon"));
+console.log("Is Palindrome?: " + checkPalindrome("apple"));
