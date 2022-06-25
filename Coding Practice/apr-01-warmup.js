@@ -7,8 +7,8 @@ var library = [
         readingStatus: true
     },
     {
-        author: 'Steve Jobs',
-        title: 'Walter Isaacson',
+        author: 'Walter Isaacson',
+        title: 'Steve Jobs',
         readingStatus: true
     },
     {
@@ -19,9 +19,13 @@ var library = [
 
 function readingChecker(books) {
 
-    shoppers.forEach(book => {
-            console.log(shopper.name + " initial amount " + shopper.amount);
+    books.forEach(book => {
+            if (book.readingStatus === true){
+                console.log("User is currently reading " + book.title);
+            } else {
+                console.log("User is not currently reading " + book.title);
+            }
 
     });
 }
-calcDiscount(shoppersArray);
+readingChecker(library);
