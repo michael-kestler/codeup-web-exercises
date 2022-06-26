@@ -6,6 +6,11 @@ while (i >= 0) {
     i--;
 }
 
+for (let i = 20; i>=0; i--){
+
+    console.log(i);
+}
+
 
 // 2. Write a function that takes an object (a) as argument and returns an array with all object keys
 //
