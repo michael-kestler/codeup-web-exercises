@@ -19,3 +19,10 @@ for (let i = 20; i>=0; i--){
 // ------------------------
 //     example input:{j:9,i:2,x:3,z:4}
 // expected output: ['j','i','x','z']
+
+function getKeys(obj){
+    console.log(Object.keys(obj))
+}
+
+
+getKeys({a:1,b:2,c:3});
