@@ -8,3 +8,11 @@
 // example input:new Set([1, 2, 3]), [2, 3]
 // expected output: new Set([1, 2, 3])
 // -------------------------
+
+function multiplesThree(){
+    for(let i = 1; i<=15; i++){
+        if (i % 3 === 0)
+            console.log(i);
+    }
+
+}
