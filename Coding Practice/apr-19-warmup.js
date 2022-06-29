@@ -29,3 +29,47 @@ for (var i=1; i <= 20; i++)
     else
         console.log(i);
 }
+
+function vowelsAndConsonants1 (s) {
+
+    const vowels = ["a", "e", "i", "o", "u"];
+    //convert string to array and get rid of non alphabets as we are just interested in consonants and vowels
+    const s_array = s.replace(/[^a-zA-Z]/g, '').split('');
+    //pluck vowels
+    const vowels_final = s_array.filter(a => vowels.includes(a.toLowerCase()));
+    //pluck consonants
+    const consonant_final = s_array.filter(a => !vowels.includes(a.toLowerCase()));
+    //to print any vowels from a word on a new line and then consonant in the order they appear.
+    return vowels_final.join('\n') + '\n' + consonant_final.join('\n');
+
+}
+
+console.log(vowelsAndConsonants1("Javascript"));
+
+function vowelsAndConsonants (s){
+    //convert string to an array
+
+    //create empty arrays to fill after looping through to pull vowels and consonants
+    let arr1 = [];
+    let arr2 = [];
+    //loop through sp array and push vowels to arr1 and consonants to arr2
+
+    for(let i = 0; i<sp.length; i++) {
+        if (sp[i] == 'a' || sp[i] == 'e' || sp[i] == 'i' || sp[i] == 'o' || sp[i] == 'u') {
+            arr1.push(sp[i]);
+        } else {
+            arr2.push(sp[i]);
+        }
+    }
+        //loop through arr1 and arr2 and print each letter on a new line in order
+        for(let i = 0;i<arr1.length;i++){
+            console.log(arr1[i]);
+        }
+        for(let i = 0;i<arr2.length;i++){
+            console.log(arr2[i]);
+        }
+
+    }
+
+
+vowelsAndConsonants("Javascript");
