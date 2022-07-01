@@ -10,9 +10,9 @@
 //return reversed string
 
 function reverseString(x){
-    var reverseArray = x.split(',');
-    var y = reverseArray.reverse;
-    return y.join(',');
+    var reverseArray = x.split('');
+    var y = reverseArray.reverse();
+    return y.join('');
 }
 
 reverseString("shit")
