@@ -198,3 +198,46 @@ const keys = (obj) => {
 keys();
 
 
+//01 JUL 2022
+
+/* Given an integer, n, perform the following conditional actions:
+
+If  is odd, print Weird
+If  is even and in the inclusive range of  2 to 5, print Not Weird
+If  is even and in the inclusive range of  6 to 20, print Weird
+If  is even and greater than 20, print Not Weird
+Complete the stub code provided in your editor to print whether or not  is weird.
+
+    Input Format
+
+A single line containing a positive integer, .
+
+Constraints
+1 <= n <=100
+
+Output Format
+
+Print Weird if the number is weird; otherwise, print Not Weird.*/
+
+function weirdChecker(n) {
+    if (n % 2 !== 0) {
+        console.log("weird");
+    } else if
+    (n % 2 === 0 && (n >= 2 && n <= 5)) {
+        console.log("not weird");
+    } else if
+    (n % 2 === 0 && (n >= 6 && n <= 20)) {
+        console.log("weird");
+    } else if
+    (n % 2 === 0 && (n > 20))
+        console.log("not weird")
+}
+weirdChecker(17)
+
+
+
+
+
+
+
+
