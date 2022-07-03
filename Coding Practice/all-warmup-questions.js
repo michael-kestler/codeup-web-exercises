@@ -249,6 +249,20 @@ function solve(meal_cost, tip_percent, tax_percent) {
 
 
 
+let n = 2
+
+for (let i = 1; i<=10; i++) {
+    if (n >= 2 && n <= 20) {
+        console.log(n + " x " + i + " = " + (n * i));
+    }
+}
+
+
+
+
+
+
+
 
 
 
